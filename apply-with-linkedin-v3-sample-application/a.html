@@ -9,32 +9,18 @@
     <title>Document</title>
 </head>
 <body>
-  <script type="text/javascript" src="http://www.linkedin.com/uas/in.js">
-    api_key: "771bh9t22ur50a"
-    extensions: ATSIntegrationWidget@https://platform.linkedin.com/rsc/extensions/onboarding-widget
-  </script>
-  
-  <script type="IN/ATSIntegrationWidget"
-    data-supported-bundled-integration-types="RECRUITER_SYSTEM_CONNECT_COMPANY,RECRUITER_SYSTEM_CONNECT_CONTRACT,APPLY_WITH_LINKEDIN"
-    data-onintegrate="handleIntegrations"
-    data-width="100px" >
-  </script>
-  
-  <script>
-  /**
-  * This callback should:
-  *   1) Store the customer's integration in your ATS. These values are used to throughout the Middleware Platform's API.
-  *   2) Tell your server to create and configure customer integrations via the Middleware Platform using this data.
-  * @param {Object[]} integrations
-  * @param {string} integrations[].integrationContext
-  * @param {string} integrations[].integrationType
-  * @param {string} integrations[].tenantType
-  */ 
-  function handleIntegrations (integrations) {
-  //Your code here
-  console.log(integrations)
-  }
-  </script>
+ <script type="text/javascript"
+ src="https://platform.linkedin.com/xdoor/scripts/in.js">
+ api_key: "771bh9t22ur50a"
+extensions:AwliWidget@https://www.linkedin.com/talentwidgets/extensions/apply-with-linkedin-widget-v3
+</script>
+<script type="IN/AwliWidget"
+  data-mode="BUTTON_DATA"
+  data-integration-context="urn:li:organization:83039289"
+  data-company-job-code=”83039289”
+  data-callback-method=”handleProfileData”>
+</script>
+ 
      
 </body>
 </html>
