@@ -9,6 +9,8 @@
     <title>Document</title>
 </head>
 <body>
+
+   <script data-size="small" data-api-key="78f0g8e8gyr0y4" data-company-job-code="661DACC2AB" data-integration-context="urn:li:organization:1102330" data-mode="BUTTON_DATA" data-allow-sign-in="true" data-callback-method="awliCallback" type="IN/AwliWidget"></script>
  
 <script>
   !function(e) {
@@ -98,11 +100,8 @@
             t.defer = !0,
             t
         }
-        function l({apiKey: e}) {
-            if (window.IN)
-                return;
-            if (Array.from(document.querySelectorAll("script")).find(e=>r.test(e.src)))
-                return;
+        function l({apiKey: e = "78f0g8e8gyr0y4"}) {
+            
             e || console.error("API Key not found");
             const t = d("https://platform.linkedin.com/in.js");
             t.text = "api_key:" + e,
